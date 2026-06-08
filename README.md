@@ -76,17 +76,14 @@ There are three pieces. Build them in this order.
 
 ### 1. An always-present app bar (navigation)
 
-Create a `Navbar` component and render it in `app/layout.js` so it appears on **every
+Create a `Navbar` component and render it so it appears on **every
 page**. It needs links to:
 
 - Home → `/`
 - Search → `/search`
 - About → `/about`
 
-Use the `<Link>` component from `next/link`, not plain `<a>` tags. Notice the
-difference: `<Link>` does a **client-side transition**, so the shared layout (your
-navbar) stays put and the page does not do a full reload. A plain `<a>` reloads the
-whole document. Try both and watch the browser to feel the difference.
+Find a way to add this links so it doesn't reload the page 🤨
 
 ### 2. The search page (`app/search`)
 
